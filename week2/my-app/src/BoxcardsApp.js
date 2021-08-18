@@ -1,6 +1,6 @@
 import React from 'React'
 import BoxCard from './Boxcard.js'
-import '.BoxStyle.css'
+//import '.BoxStyle.css'
 
 function BoxApp (){
     return(
