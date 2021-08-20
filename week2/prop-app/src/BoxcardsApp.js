@@ -1,4 +1,4 @@
-import React from 'React'
+import React from 'react'
 import BoxCard from './Boxcard.js'
 //import '.BoxStyle.css'
 

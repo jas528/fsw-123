@@ -1,5 +1,5 @@
-
-function BoxCardsApp(props) {
+import React from 'react'
+function BoxCard(props) {
   return(
   <div className="cards"style={{backgroundColor:props.bgcolor, width: props.width}}>
     <h2>{props.title}</h2>
@@ -13,4 +13,4 @@ function BoxCardsApp(props) {
 
 
 
-export default BoxCardsApp;
+export default BoxCard;
