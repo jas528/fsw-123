@@ -1,25 +1,30 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react'
+import Todo3Card from './DiceApp.js'
+import Todos from 
+import  './App.js css'
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+class App extends React.Component{
+    constructor(){
+        super()
+        this.state={
+            aryTodos: Todos.map((item,index)=>
+            ({
+                key:index,
+                id: item.id,
+                text: item.text,
+                isCompleted: item.isCompleted
+
+        })
+            )
+    }
 }
-
-export default App;
+completeTodo - (e)=>{
+    if (e){
+        let aryUpdatedTodos=[..this.state.aryTodos]
+        let index =aryUpdatedTodos.findIndex(item=>item.id===e);
+        let aryUpdatedTodo={...aryUpdatedTodos[index]}
+        if (aryUpdatedTodo.isCompleted){
+            aryUpdatedTodo.isCompleted=false
+        }else
+    }
+}
