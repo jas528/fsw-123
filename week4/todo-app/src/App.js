@@ -6,22 +6,20 @@ class App extends React.Component{
     constructor(){
         super()
         this.state={
-            aryTodos: Todos.map((item,index)=>
-            ({
-                key:index,
-                id: item.id,
-                text: item.text,
-                isCompleted: item.isCompleted
+            //aryTodos: Todos.map((item,index)=>
+            //({
+              //  key:index,
+               // id: item.id,
+                //text: item.text,
+                //isCompleted: item.isCompleted
 
-        })
-            )
+       // })
+         //  )
     }
 }
   addTodo = text =>{
-     //make copy of existing todos stored in state
-     //add new todo object to copy
-     //update the todos array
-
+     //make copy of existing todos storedin state
+//add new todo objectto copy
  }
 completeTodo = (e)=>{
     if (e){
@@ -33,7 +31,6 @@ completeTodo = (e)=>{
         }else{}
     }
 }
-DeleteTodo
 render(){
 return(<div>todoApp</div>)
 }
