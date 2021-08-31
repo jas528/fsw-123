@@ -1,3 +1,4 @@
+[
 {
     "title": "Hello World",
     "slug": "hello-world",
@@ -8,4 +9,5 @@
     "title": "Passing Props",
     "slug": "pasing-props",
     "content": "Props are key-value pairs passed into"
-},
+}
+]

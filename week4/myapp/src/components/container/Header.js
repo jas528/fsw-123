@@ -1,11 +1,12 @@
 import React from "react";
+import {Link} from 'react-router-dom'
 class Header extends React.Component{
     render(){
         return (
             <nav>
-                <a>Blog</a>
-                <a>About</a>
-                <a>Contact</a>
+                <Link to="/blog"> Blog</Link>
+                <Link to="/about">About</Link>
+                <Link to="/contact">Contact</Link>
             </nav>
         )
     }
