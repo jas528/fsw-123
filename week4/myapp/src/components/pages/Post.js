@@ -15,7 +15,7 @@ function Post (){
  
         return (
             <div>
-post{post.title}
+<h3>{post.title}</h3>
             </div>
         )
     }
