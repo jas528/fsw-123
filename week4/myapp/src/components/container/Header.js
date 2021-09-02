@@ -4,7 +4,7 @@ class Header extends React.Component{
     render(){
         return (
             <nav>
-                <Link to="/blog"> Home</Link>
+                <Link to="/home"> Home</Link>
                 <Link to="/about">About</Link>
                 <Link to="/contact">Contact</Link>
             </nav>
