@@ -1,0 +1,32 @@
+import React, {useState} from 'react';
+
+function App_old (){
+    const [count, setCount]=useState(6)
+    console.log ('run function')
+    return 6
+}
+
+function App5 (){
+    const [count, setCount]=useState(countInitial())
+    
+    function decrementCount(){
+        //setCount(prevCount => preCount -2)
+    }
+    function incrementCount(){
+        //setCount(prevCount => preCount +2)
+       
+        return(
+    
+        <div>
+            <br></br>
+            render
+        <button onClick={decrementCount}>=</button>
+        
+        <span>{count}</span>
+        
+        <button>+</button>
+        </div>
+    )
+}
+}
+export default App5
