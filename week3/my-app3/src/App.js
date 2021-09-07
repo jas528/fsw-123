@@ -1,6 +1,6 @@
 import React from 'react'
-//import Todos from 
-//import  './App.js css'
+import Todos from '3Store.js'
+import  './App.css'
 
 class App extends React.Component{
     constructor(){
@@ -18,7 +18,26 @@ class App extends React.Component{
     }
 }
   addTodo = text =>{
+      if (e) {
+let aryUpdatedTodos = [...this.state.aryTodos]
+let index= aryUpdatedTodos.findIndex(item=> item.id === e);
+let aryUpdatedTodo ={...aryUpdatedTodos[index]}
+if (aryUpdatedTodoisCompleted){
+    aryUpdatedTodoisCompleted= false
+}else{
+
+
+
+      }
      //make copy of existing todos stored in state
+
+}
+
+
+    }
+
+
+
      //add new todo object to copy
      //update the todos array
 
@@ -37,5 +56,5 @@ DeleteTodo
 render(){
 return(<div>todoApp</div>)
 }
-}
-export default App
+
+export default App.js
