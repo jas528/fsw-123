@@ -54,7 +54,7 @@ completeTodo = (e)=>{
 }
 DeleteTodo
 render(){
-return(<div>todoApp</div>)
+return(<div>ToDoApp</div>)
 }
 
 export default App.js
