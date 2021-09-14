@@ -10,4 +10,16 @@
     "slug": "pasing-props",
     "content": "Props are key-value pairs passed into"
 }
+,
+{
+    "title": "What is State",
+    "slug": "what is itate",
+    "content": "State is a class defined by object"
+}
+,
+{
+    "title": "Learn React Router",
+    "slug": "what is itate",
+    "content": "Standard library"
+}
 ]

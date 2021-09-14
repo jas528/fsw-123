@@ -1,20 +1,33 @@
-import GiphySearch from "./giphysearchapp"
-import './App.css';
+import { useState } from 'react'
+import { listoftodos } from './store'
+import Todo from './Todo'
+import TodoList from './TodoList'
+import TodoForm from './TodoForm'
+import { v4 as uuid4} from "uuid";
 
 function App() {
 
-   // Search endpoint example:
-   //  https://api.giphy.com/v1/gifs/random?api_key=BtiKnJZ5QHnBRHTGKTFqdeZGhugIKCpZ&tag=cat
+    const [todos, setTodos] = useState(listoftodos)
 
-   // tag=cat
+    const addTodo = text => {
+        const newTodos = [
+            ...todos,
+            {
+                id: uuid4(),
+                text: text,
+                isCompleted: false
+            }
+        ]
+        setTodos(newTodos)
+    }
 
-  return (
-    <div>
-      This is the React App!
-       < GiphySearch initialQuery= "cat"/>
-
-    </div>
-  );
+    return (
+        <div>
+            <h1>My Todo App</h1>
+            <TodoForm addTodo={addTodo} />
+            <TodoList todos = {todos} />
+        </div>
+    )
 }
 
 export default App;
