@@ -15,5 +15,10 @@ export const listoftodos = [
         id: uuid4(),
         text: "Clean House",
         isCompleted: false
-    }  
+    },
+    {
+        id: uuid4(),
+        text: "Finish Assignment",
+        isCompleted: false
+    }
 ]
