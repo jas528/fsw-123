@@ -10,14 +10,15 @@ return result;{
 }
 return(
     <Container>
-
+<Screen>
     <div class="cal-keys">
     <div class="cal-row">
-    
+    </Screen>
     <input type="button" value="1" onClick
+    
 <Button onClick={handleAllClear} gridSpan={1}control>AC<Button/>
-<Button onClick={handleDeleting} control>Del</Button>={1}<Button/>
-<Button data= {'-'} onClick={appendValue}>-/</Button>
+<Button onClick={handleDeleting} control>Del</Button>
+<Button data= {'-'} onClick={chooseOperation}operation>-/</Button>
 <Button data= {'1'} onClick={appendValue}>1</Button>
 <Button data= {'2'} onClick={appendValue}>2</Button>
 <Button data= {'3'} onClick={appendValue}>3</Button>
@@ -30,8 +31,9 @@ return(
 <Button data= {'0'} onClick={appendValue}>0</Button>
 <Button data= {'+'} onClick={appendValue}>+</Button>
 <Button data= {'*'} onClick={appendValue}>* </Button>
+<Button gridSpan= {'1'} onClick={equals}equals>= </Button>
 
-<Container/>
+</Container>
 </div>
 )
 
